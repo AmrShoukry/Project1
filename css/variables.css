@@ -1,0 +1,178 @@
+:root
+{
+
+    /* Font Sizes */
+
+    --h1-head-font-size: 104px;
+    --h1-font-size: 56px;
+    --h2-font-size: 48px;
+    --h3-font-size: 40px;
+    --h4-font-size: 32px;
+    --h5-font-size: 24px;
+    --h6-font-size: 20px;
+
+    --logo-text-font-size: 32px;
+    --large-text-font-size: 20px;
+    --medium-text-font-size: 18px;
+    --normal-text-font-size: 16px;
+    --small-text-font-size: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Line Heights */
+
+    --h1-head-line-height: calc(1.1 * var(--h1-head-font-size));
+    --h1-line-height: calc(1.1 * var(--h1-font-size) );
+    --h2-line-height: calc(1.1 * var(--h2-font-size) );
+    --h3-line-height: calc(1.1 * var(--h3-font-size) );
+    --h4-line-height: calc(1.1 * var(--h4-font-size) );
+    --h5-line-height: calc(1.1 * var(--h5-font-size) );
+    --h6-line-height: calc(1.1 * var(--h6-font-size) );
+    --about-h6-line-height: 40px;
+    --about-p-line-height: 32px;
+
+    --logo-text-line-height:   calc(1.1 * var(--logo-text-font-size) );
+    --large-text-line-height:  calc(1.4 * var(--large-text-font-size) );
+    --medium-text-line-height: calc(1.4 * var(--medium-text-font-size) );
+    --normal-text-line-height: calc(1.4 * var(--normal-text-font-size) );
+    --small-text-line-height:  calc(1.4 * var(--small-text-font-size) );
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Spacings */
+
+    --very-narrow-spacing: 2px;
+    --narrow-spacing: 4px;
+    --relative-spacing: 8px;
+    --next-line-spacing: 16px;
+    --padding-spacing: 24px;
+    --narrow-next-element-spacing: 24px;
+    --normal-next-element-spacing: 32px;
+    --wide-next-element-spacing: 64px;
+    --container-space: 16px;
+
+
+
+
+
+
+
+
+
+
+    /* Colors */
+
+    --main-color: #10cab7;
+    --second-color: #24484F;
+
+    --main-background-color: #ffffff;
+    --second-background-color: #F6F6F6;
+    --footer-ul-background-color: #2C4755;
+    --landing-gradient: #99999999;
+
+    --list-head-color: #637988;
+    --list-color: #ffffff;
+    --list-hover-color: #00e1ff;
+
+    --landing-text-color: #2C4755;
+    --normal-text-color: #6D6D6D;
+    --headers-text-color: #1F2021;
+    --special-text-color: #4D4C4C;
+
+    --icons-color: #334752;
+
+    --main-head-color: #F6F6F6;
+    --second-head-color: #EBECED;
+    --sub-head-color: #575757;
+
+    --scrollbar-thumb: #24484Fcc;
+
+
+
+
+
+
+
+
+
+
+
+    /* Sizes */
+
+    --nav-Height: 64px;
+    --bar-All-Height: 16px;
+    --bar-All-width: 32px;
+    --bar-one-Height: 1.5px;
+    --bar-middle-width: 20px;
+    --links-width: 200px;
+    --links-angle-depth: 16px;
+    --landing-p-max-width: 320px;
+
+    --services-all-shape-and-I-height: 440px;
+    --services-all-shape-width: 376px;
+    --services-box-size: 336px;
+    --services-shared-shapes-size: 40px;
+    --services-I-extra-size: 56px;
+    --services-I-width: 96px;
+
+    --portfolio-img-height: 236px;
+
+    --about-all-and-I-height: 456px;
+    --about-L-height: 296px;
+    --about-divider-height: 2px;
+    --about-I-width: 96px;
+    --about-L-width: 184px;
+    --about-L-clip-path-top-depth: 88px;
+    --about-L-clip-path-bottom-depth: 64px;
+    --about-box-size: 336px;
+    --about-shared-Horizontal-box-l: 56px;
+    --about-shared-Vertical-box-l: 24px;
+    --about-hr-height: 2px;
+    --about-hr-width: 264px;
+
+    --footer-height: 80px;
+
+    --section-padding: 104px;
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    /* General */
+
+    --main-transition: 0.5s;
+
+}
+
+

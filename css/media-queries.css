@@ -1,0 +1,123 @@
+@media (0px < width < 768px)
+{
+    body > header > nav > div.container > div.links:hover
+    {
+        position: static;
+    }
+
+    body > header > nav > div.container > div.links:hover > div.inner
+    {
+        width: 100%;
+    }
+
+    body > header > nav > div.container > div.links:hover > div.inner::before
+    {
+        transform: translateX(calc(0px - var(--links-angle-depth)));
+    }
+
+    body > div.features 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-columns: 1fr;
+    }
+
+    body > div.features > div.box
+    {
+        padding:var(--padding-spacing);
+    }
+
+
+    body > section h1.head
+    {
+        font-size: 20vw;
+    }
+
+    
+    body > .services > div.container > div.full > div.divs
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-columns: 1fr;
+        grid-gap: var(--normal-next-element-spacing);
+    }
+
+    body > .services > div.container > div.full > div.divs > div
+    {
+        flex-direction: column;
+        align-items: center;
+        padding:var(--padding-spacing);
+    }
+
+    body > .services > div.container > div.full > div.divs > div > div.text
+    {
+        text-align: center;
+        margin-left: 0;
+        margin-top: var(--next-line-spacing);
+    }
+
+
+    body > .contact
+    {
+        text-align: center;
+    }
+
+    body > .contact > div.container > h3
+    {
+        margin: var(--normal-next-element-spacing) 0px;
+    }
+
+    body > .contact > div.container > div.social
+    {
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    body > .contact > div.container > div.social > span > a 
+    {
+        margin-left: 0;
+    }
+}
+
+@media (768px < width < 992px)
+{
+    .container
+    {
+        width: 750px;
+    }
+}
+
+@media (992px < width < 1200px)
+{
+    .container
+    {
+        width: 970px;
+    }
+}
+
+@media (width > 1200px)
+{
+    .container
+    {
+        width: 1170px;
+    }
+
+}
+
+
+@media (width < 1200px)
+{
+    body > .services > div.container > div.full > div.shapes
+    {
+        display: none;
+    }
+}
+
+@media (width < 992px)
+{
+    body > .about > div.container > div.all > div.shapes
+    {
+        display: none;
+    }    
+}

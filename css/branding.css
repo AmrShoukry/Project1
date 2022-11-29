@@ -1,0 +1,506 @@
+/* Styling header */
+
+body > header
+{
+    height: 100vh;
+    margin-bottom: var(--normal-next-element-spacing);
+}
+
+    /* Styling header nav */
+
+
+body > header > nav 
+{
+    height: var(--nav-Height);
+    background-color: var(--main-background-color);
+}
+
+body > header > nav > div.container
+{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+body > header > nav > div.container > p.logo > a > span.a {color: var(--main-color);} 
+body > header > nav > div.container > p.logo > a > span.s {color: var(--second-color);}
+
+
+body > header > nav > div.container > div.links
+{
+    position: relative;
+    z-index: 8;
+}
+
+body > header > nav > div.container > div.links > span.bar
+{
+    position: relative;
+    display: block;
+    height: var(--bar-All-Height);
+    width: var(--bar-All-width);
+}
+
+body > header > nav > div.container > div.links > span.bar > span:first-of-type,
+body > header > nav > div.container > div.links > span.bar > span:last-of-type
+{
+    position: absolute;
+    display: block;
+    height: var(--bar-one-Height);
+    width: 100%;
+    background-color: var(--second-color);
+}
+
+body > header > nav > div.container > div.links > span.bar > span:first-of-type {top: 0;}
+body > header > nav > div.container > div.links > span.bar > span:last-of-type {bottom: 0;}
+
+body > header > nav > div.container > div.links > span.bar > span:nth-of-type(2)
+{
+    position: absolute;
+    display: block;
+    height: var(--bar-one-Height);
+    width: var(--bar-middle-width);
+    background-color: var(--second-color);;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition: var(--main-transition)
+}
+
+body > header > nav > div.container > div.links > div.inner::before
+{
+    width: 0;
+    height: 0;
+    border: var(--links-angle-depth) solid transparent;
+    border-bottom: var(--links-angle-depth) solid var(--footer-ul-background-color);
+    content: "";
+    position: absolute;
+    top: calc(0px - var(--links-angle-depth) * 2);
+    right: 0;
+}
+
+body > header > nav > div.container > div.links > div.inner
+{
+    width: var(--links-width);
+    position: absolute;
+    right: 0;
+    top: calc(50% + var(--nav-Height) / 2);
+    background-color: var(--footer-ul-background-color);
+    padding: var(--padding-spacing);
+    visibility: hidden;
+    opacity: 0;
+    text-transform: capitalize;
+    transition: var(--main-transition) opacity;
+
+}
+
+body > header > nav > div.container > div.links > div.inner > i
+{
+    margin-bottom: var(--next-line-spacing);
+    color: var(--main-background-color);
+    cursor: pointer;
+}
+
+body > header > nav > div.container > div.links > div.inner > section
+{
+    margin-bottom: var(--normal-next-element-spacing);
+}
+
+body > header > nav > div.container > div.links > div.inner > section > ul > li > a
+{
+    display: block;
+    width: fit-content;
+    color: var(--main-background-color);
+    margin-bottom: var(--relative-spacing);
+    transition: var(--main-transition) all, 0.1s color;
+}
+
+body > header > nav > div.container > div.links > div.inner > section > p.header
+{
+    margin-bottom: var(--next-line-spacing);
+    color: var(--list-head-color);
+    font-size: var(--medium-text-font-size);
+}
+
+body > header > nav > div.container > div.links > div.inner > section > p.special-header
+{
+    color: yellow;
+    font-family: 'Lobster Two', cursive;
+}
+
+    /* nav hover Effects */
+
+body > header > nav > div.container > div.links:hover > span.bar > span:nth-last-of-type(2)
+{
+    width: 100%;
+}
+
+body > header > nav > div.container > div.links:hover > div.inner
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+body > header > nav > div.container > div.links:hover >  div.inner > section > ul > li > a:hover
+{
+    color: var(--list-hover-color);
+    transform: translateX(var(--next-line-spacing));
+}
+
+
+/* Styling header landing */
+
+
+
+body > header > .landing
+{
+    position: relative;
+    height: calc(100vh - var(--nav-Height));
+    text-transform: capitalize;
+    background-image:  url(../images/header-cover8.jpeg);
+    background-size: cover;
+    background-position: top center;
+}
+
+
+body > header > .landing > div.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+body > header > .landing > div.container > div.box
+{
+    padding: var(--normal-next-element-spacing) var(--wide-next-element-spacing) ;
+    background-color: var(--main-background-color);
+}
+
+body > header > .landing > div.container > div.box > h1 
+{
+    color: var(--main-color);
+    margin-top: var(--normal-next-element-spacing);
+}
+
+body > header > .landing > div.container > div.box > p 
+{
+    margin: auto;
+    text-transform: uppercase;
+    color: var(--sub-head-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling like-about */
+
+
+
+
+body > .like-about
+{
+    padding: var(--section-padding) 0;
+}
+
+body > .like-about > div.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+body > .like-about > div.container > div.details
+{
+    padding: calc(1.5 * var(--wide-next-element-spacing));
+    box-shadow: 1px 4px 4px #00000013;
+}
+
+body > .like-about > div.container > div.details > section:not(:last-of-type)
+{
+    margin-bottom: var(--wide-next-element-spacing);
+}
+
+body > .like-about > div.container > div.details > section > h6 
+{
+    margin-bottom: var(--next-line-spacing);
+    color: var(--headers-text-color);
+}
+
+body > .like-about > div.container > div.details > section > p 
+{
+    color: var(--sub-head-color);
+}
+
+body > .like-about > div.container > div.text > h6
+{
+    line-height: var(--about-h6-line-height);
+    color: var(--headers-text-color);
+}
+
+body > .like-about > div.container > div.text > hr
+{
+    height: var(--about-hr-height);
+    width: var(--about-hr-width);
+    background-color: var(--main-color);
+    border: 0;
+    margin: var(--next-line-spacing) 0;
+}
+
+body > .like-about > div.container > div.text > p
+{
+    line-height: var(--about-p-line-height);
+    color: var(--sub-head-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* General Sections spacing */
+
+body > .full,
+body > .text-start,
+body > .text-end
+{
+    margin-bottom: var(--section-padding);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling full, text-start, text-end */
+
+
+body > .full > div.container
+{
+    height: 75vh;
+}
+
+body > .full > div.container > img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+body > .text-start > div.container,
+body > .text-end > div.container 
+{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+body > .text-start > div.container > img,
+body > .text-end > div.container > img
+{
+    width: 48%;
+}
+
+body > .text-start > div.container > p,
+body > .text-end > div.container > p
+{
+    padding: var(--padding-spacing);
+    
+}
+
+
+body > .text-start > div.container { flex-direction: row; }
+body > .text-end > div.container { flex-direction: row-reverse;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling contact */
+
+
+
+body > .contact
+{
+    background-color: var(--second-background-color);
+    padding: var(--section-padding) 0;
+}
+
+
+
+body > .contact h1.head
+{
+    color: var(--second-head-color);
+    font-size: var(--h1-head-font-size);
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 800;
+}
+
+body > .contact p.sub-head
+{
+    text-align: center;
+    transform: translateY(calc(0px - var(--relative-spacing)));
+    font-size: var(--large-text-font-size);
+    color: var(--sub-head-color);
+    margin-bottom: calc(var(--wide-next-element-spacing) * 1.5);
+}
+
+
+body > .contact > div.container > p + h2
+{
+    color: var(--main-color);
+}
+
+
+body > .contact > div.container > h3
+{
+    margin: var(--normal-next-element-spacing) 0px var(--normal-next-element-spacing) var(--normal-next-element-spacing);
+    color: var(--second-color);
+    word-break: break-all;
+
+}
+
+body > .contact > div.container > div.social
+{
+    display: flex;
+    margin-left: var(--wide-next-element-spacing);
+}
+
+body > .contact > div.container > div.social > span > a
+{
+    margin-left: var(--normal-next-element-spacing);
+    transition: var(--main-transition);
+}
+
+body > .contact > div.container > div.social > span > a:hover
+{
+    color: var(--list-hover-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling footer */
+
+
+
+
+
+
+body > footer
+{
+    background-color: var(--footer-ul-background-color);
+}
+
+body > footer > div.container
+{
+    height: var(--footer-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-background-color);
+    font-weight: bold;
+}
+
+body > footer > div.container > p > span
+{
+    color: var(--main-color);
+}

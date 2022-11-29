@@ -1,0 +1,121 @@
+@media (0px < width < 768px)
+{
+    body > header > nav > div.container > div.links:hover
+    {
+        position: static;
+    }
+
+    body > header > nav > div.container > div.links:hover > div.inner
+    {
+        width: 100%;
+    }
+
+    body > header > nav > div.container > div.links:hover > div.inner::before
+    {
+        transform: translateX(calc(0px - var(--links-angle-depth)));
+    }
+
+
+    body > header > .landing > div.container > div.box > h1 
+    {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    body > .like-about > div.container
+    {
+        flex-flow: column wrap;    
+    }
+
+    body > .like-about > div.container > div.details 
+    {
+        width: 100%;
+        text-align: center;
+        padding: var(--normal-next-element-spacing);
+    }
+
+    body > .like-about > div.container > div.details > section:not(:last-of-type)
+    {
+        margin-bottom: var(--normal-next-element-spacing);
+    }
+    
+    body > .text-start > div.container > img,
+    body > .text-end > div.container > img
+    {
+        display: none;
+    }    
+
+
+
+    body > .contact
+    {
+        text-align: center;
+    }
+
+    body > .contact > div.container > h3
+    {
+        margin: var(--normal-next-element-spacing) 0px;
+    }
+
+    body > .contact > div.container > div.social
+    {
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    body > .contact > div.container > div.social > span > a 
+    {
+        margin-left: 0;
+    }
+
+    body > .contact h1.head
+    {
+        font-size: 20vw;
+    }
+}
+
+@media (768px < width < 992px)
+{
+    .container
+    {
+        width: 750px;
+    }
+
+    body > .like-about > div.container
+    {
+        flex-flow: column wrap;
+    }
+
+    body > .like-about > div.container > div.details
+    {
+        display: flex;
+        width: 100%;
+        padding: var(--normal-next-element-spacing);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body > .like-about > div.container > div.details > section:not(:last-of-type)
+    {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (992px < width < 1200px)
+{
+    .container
+    {
+        width: 970px;
+    }
+}
+
+@media (width > 1200px)
+{
+    .container
+    {
+        width: 1170px;
+    }
+}
+

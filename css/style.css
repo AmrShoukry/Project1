@@ -1,0 +1,703 @@
+/* Styling header */
+
+body > header
+{
+    height: 100vh;
+    margin-bottom: var(--normal-next-element-spacing);
+}
+
+    /* Styling header nav */
+
+body > header > nav 
+{
+    height: var(--nav-Height);
+    background-color: var(--main-background-color);
+}
+
+body > header > nav > div.container
+{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+body > header > nav > div.container > p.logo > a > span.a {color: var(--main-color);} 
+body > header > nav > div.container > p.logo > a > span.s {color: var(--second-color);}
+
+
+body > header > nav > div.container > div.links
+{
+    position: relative;
+    z-index: 8;
+}
+
+body > header > nav > div.container > div.links > span.bar
+{
+    position: relative;
+    display: block;
+    height: var(--bar-All-Height);
+    width: var(--bar-All-width);
+}
+
+body > header > nav > div.container > div.links > span.bar > span:first-of-type,
+body > header > nav > div.container > div.links > span.bar > span:last-of-type
+{
+    position: absolute;
+    display: block;
+    height: var(--bar-one-Height);
+    width: 100%;
+    background-color: var(--second-color);
+}
+
+body > header > nav > div.container > div.links > span.bar > span:first-of-type {top: 0;}
+body > header > nav > div.container > div.links > span.bar > span:last-of-type {bottom: 0;}
+
+body > header > nav > div.container > div.links > span.bar > span:nth-of-type(2)
+{
+    position: absolute;
+    display: block;
+    height: var(--bar-one-Height);
+    width: var(--bar-middle-width);
+    background-color: var(--second-color);;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition: var(--main-transition)
+}
+
+body > header > nav > div.container > div.links > div.inner::before
+{
+    width: 0;
+    height: 0;
+    border: var(--links-angle-depth) solid transparent;
+    border-bottom: var(--links-angle-depth) solid var(--footer-ul-background-color);
+    content: "";
+    position: absolute;
+    top: calc(0px - var(--links-angle-depth) * 2);
+    right: 0;
+}
+
+body > header > nav > div.container > div.links > div.inner
+{
+    width: var(--links-width);
+    position: absolute;
+    right: 0;
+    top: calc(50% + var(--nav-Height) / 2);
+    background-color: var(--footer-ul-background-color);
+    padding: var(--padding-spacing);
+    visibility: hidden;
+    opacity: 0;
+    text-transform: capitalize;
+    transition: var(--main-transition) opacity;
+
+}
+
+body > header > nav > div.container > div.links > div.inner > i
+{
+    margin-bottom: var(--next-line-spacing);
+    color: var(--main-background-color);
+    cursor: pointer;
+}
+
+body > header > nav > div.container > div.links > div.inner > section
+{
+    margin-bottom: var(--normal-next-element-spacing);
+}
+
+body > header > nav > div.container > div.links > div.inner > section > ul > li > a
+{
+    display: block;
+    width: fit-content;
+    color: var(--main-background-color);
+    margin-bottom: var(--relative-spacing);
+    transition: var(--main-transition) all, 0.1s color;
+}
+
+body > header > nav > div.container > div.links > div.inner > section > p.header
+{
+    margin-bottom: var(--next-line-spacing);
+    color: var(--list-head-color);
+    font-size: var(--medium-text-font-size);
+}
+
+body > header > nav > div.container > div.links > div.inner > section > p.special-header
+{
+    color: yellow;
+    font-family: 'Lobster Two', cursive;
+}
+
+
+
+    /* nav hover effects */
+
+body > header > nav > div.container > div.links:hover > span.bar > span:nth-last-of-type(2)
+{
+    width: 100%;
+}
+
+body > header > nav > div.container > div.links:hover > div.inner
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+body > header > nav > div.container > div.links:hover >  div.inner > section > ul > li > a:hover
+{
+    color: var(--list-hover-color);
+    transform: translateX(var(--next-line-spacing));
+}
+
+
+
+    /* Styling header landing */
+
+
+
+body > header > .landing
+{
+    text-align: center;
+    position: relative;
+    height: calc(100vh - var(--nav-Height));
+    text-transform: capitalize;
+    background-image:  url(../images/header-cover.jpg);
+    background-size: cover;
+    background-position: top center;
+    padding-top: calc(var(--wide-next-element-spacing) * 2);
+}
+
+body > header > .landing > div.container > h1 
+{
+    color: var(--main-color);
+    margin-bottom: var(--normal-next-element-spacing);
+}
+
+body > header > .landing > div.container > p 
+{
+    max-width: var(--landing-p-max-width);
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling Features */
+
+
+
+body > div.features 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+}
+
+body > div.features > div.box
+{
+    text-align: center;
+    padding: var(--wide-next-element-spacing);
+}
+
+body > div.features > div.box:nth-of-type(2)
+{
+    box-shadow: 2px 4px 4px #00000013;
+}
+
+body > div.features > div.box > i
+{
+    font-size: calc(var(--large-text-font-size) * 3);
+    color: var(--main-color);
+}
+
+body > div.features > div.box > h6
+{
+    margin: var(--normal-next-element-spacing) 0px var(--next-line-spacing);
+    color: var(--headers-text-color);
+}
+
+body > div.features > div.box > p
+{
+    color: var(--sub-head-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling General Sections */
+
+
+
+body > section
+{
+    padding: var(--section-padding) 0;
+}
+
+body > section:nth-of-type(odd)
+{
+    background-color: var(--main-background-color);
+}
+
+body > section:nth-of-type(even)
+{
+    background-color: var(--second-background-color);
+}
+
+body > section:nth-of-type(odd) h1.head
+{
+    color: var(--main-head-color);
+}
+
+body > section:nth-of-type(even) h1.head
+{
+    color: var(--second-head-color);
+}
+
+
+body > section h1.head
+{
+    font-size: var(--h1-head-font-size);
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 800;
+}
+
+body > section p.sub-head
+{
+    text-align: center;
+    transform: translateY(calc(0px - var(--relative-spacing)));
+    font-size: var(--large-text-font-size);
+    color: var(--sub-head-color);
+    margin-bottom: calc(var(--wide-next-element-spacing) * 1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling services */
+
+
+body > .services > div.container > div.full
+{
+    margin-top: calc(2 * var(--wide-next-element-spacing));
+    display: flex;
+    justify-content: space-between;
+}
+
+body > .services > div.container > div.full > div.divs
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    grid-gap: var(--normal-next-element-spacing);
+}
+
+body > .services > div.container > div.full > div.divs > div
+{
+    display: flex;
+}
+
+body > .services > div.container > div.full > div.divs > div > i
+{
+    font-size: calc(var(--large-text-font-size) * 1.5);
+    color: var(--main-color);
+}
+
+body > .services > div.container > div.full > div.divs > div > div.text
+{
+    margin-left: var(--normal-next-element-spacing);
+    color: var(--special-text-color);
+}
+
+body > .services > div.container > div.full > div.divs > div > div.text > h6
+{
+    margin-bottom: var(--next-line-spacing);
+    color: var(--headers-text-color);
+}
+
+body > .services > div.container > div.full > div.shapes
+{
+    position: relative;
+    height: var(--services-box-size);
+    width: var(--services-box-size);
+    flex-shrink: 0;
+    margin-right: var(--services-shared-shapes-size);
+    margin-left: var(--normal-next-element-spacing);
+    z-index: 1;
+}
+
+body > .services > div.container > div.full > div.shapes img
+{
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+
+body > .services > div.container > div.full > div.shapes::before
+{
+    top: calc(0px - var(--services-I-extra-size));
+    right: calc(0px - var(--services-shared-shapes-size));
+    content: "";
+    height: calc(var(--services-I-extra-size) * 2 + 100%);
+    width: var(--services-I-width);
+    background-color: var(--footer-ul-background-color);
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling Portfolio */
+
+
+
+body > .portfolio > div.container > div.divs
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: var(--normal-next-element-spacing);
+}
+
+body > .portfolio > div.container > div.divs > div.box
+{
+    background-color: var(--main-background-color);
+}
+
+body > .portfolio > div.container > div.divs > div.box > img
+{
+    object-fit: cover;
+    width: 100%;
+    height: var(--portfolio-img-height);
+}
+
+body > .portfolio > div.container > div.divs > div.box > div.text
+{
+    padding: var(--padding-spacing);
+}
+
+body > .portfolio > div.container > div.divs > div.box > div.text > h6
+{
+    margin-bottom: var(--relative-spacing);
+    color: var(--headers-text-color);
+}
+
+body > .portfolio > div.container > div.divs > div.box > div.text > p
+{
+    color: var(--special-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling about */
+
+
+
+body > .about > div.container > div.all
+{
+    display: flex;
+    gap: calc(3 * var(--wide-next-element-spacing));
+}
+
+body > .about > div.container > div.all > div.shapes
+{
+    height: var(--about-box-size);
+    width: var(--about-box-size);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    margin-left: var(--next-line-spacing);
+}
+
+body > .about > div.container > div.all > div.shapes::before
+{
+    position: absolute;
+    content: "";
+    width: var(--about-I-width);
+    height: var(--about-all-and-I-height);
+    background-color: var(--main-head-color);
+    left: calc(0px - var(--next-line-spacing));
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+body > .about > div.container > div.all > div.shapes::after
+{
+    position: absolute;
+    content: "";
+    width: var(--about-L-width);
+    height: var(--about-L-height);
+    top: calc(0px -  var(--about-shared-Vertical-box-l));
+    right: calc(var(--about-shared-Horizontal-box-l) - var(--about-L-width));
+    background-color:var(--main-color);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% calc(100% - var(--about-L-clip-path-bottom-depth)), var(--about-L-clip-path-top-depth) calc(100% - var(--about-L-clip-path-bottom-depth)), var(--about-L-clip-path-top-depth) 0);
+    z-index: -1;
+}
+
+
+body > .about > div.container > div.all > div.shapes > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+body > .about > div.container > div.all > div.text > h6
+{
+    line-height: var(--about-h6-line-height);
+    color: var(--headers-text-color);
+}
+
+body > .about > div.container > div.all > div.text > hr
+{
+    height: var(--about-hr-height);
+    width: var(--about-hr-width);
+    background-color: var(--main-color);
+    border: 0;
+    margin: var(--next-line-spacing) 0;
+}
+
+body > .about > div.container > div.all > div.text > p
+{
+    line-height: var(--about-p-line-height);
+    color: var(--sub-head-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling contact */
+
+
+body > .contact > div.container > p + h2
+{
+    color: var(--main-color);
+}
+
+
+body > .contact > div.container > h3
+{
+    margin: var(--normal-next-element-spacing) 0px var(--normal-next-element-spacing) var(--normal-next-element-spacing);
+    color: var(--second-color);
+    word-break: break-all;
+
+}
+
+body > .contact > div.container > div.social
+{
+    display: flex;
+    margin-left: var(--wide-next-element-spacing);
+}
+
+body > .contact > div.container > div.social > span > a
+{
+    margin-left: var(--normal-next-element-spacing);
+    transition: var(--main-transition);
+}
+
+body > .contact > div.container > div.social > span > a:hover
+{
+    color: var(--list-hover-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling footer */
+
+
+body > footer
+{
+    background-color: var(--footer-ul-background-color);
+}
+
+body > footer > div.container
+{
+    height: var(--footer-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-background-color);
+    font-weight: bold;
+}
+
+body > footer > div.container > p > span
+{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling the scrollbar */
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--scrollbar-thumb);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: var(--second-color);
+}
+
